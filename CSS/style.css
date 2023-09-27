@@ -30,4 +30,13 @@ header {
     height: 500px;
     margin: 0 auto;
   }
-
+.container {
+    margin-top: 17px;
+}
+.btn-warning {
+    margin-top: 10px;
+}
+.ganr {
+    color: grey;
+    font-size: 15px;
+}
