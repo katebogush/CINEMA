@@ -1,0 +1,33 @@
+
+.container {
+    margin-top: 17px;
+}
+.btn-warning {
+    margin-top: 10px;
+}
+.ganr {
+    color: grey;
+    font-size: 15px;
+}
+.foto img:hover {
+    transform: scale(1.1);
+}
+.foto {
+    width: 185px;
+    height: 260px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+img {
+    transition: transform 0.25s;
+  }
+.foto i {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    
+}
+.foto i:hover {
+    color: red;
+}

@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+} 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.name {
+   font-size: 45px;
+   font-weight: bold;
+   font-style: italic;
+   color: orange;
+   text-transform: uppercase;
+}
+.procat {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 20px;
+    background: linear-gradient(to left, orange,red);
+    color: white;
+    margin-bottom: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+#carouselExampleCaptions {
+    height: 500px;
+}
+.carousel-inner img {
+    height: 500px;
+    margin: 0 auto;
+  }
