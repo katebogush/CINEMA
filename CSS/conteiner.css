@@ -26,7 +26,7 @@ img {
     position: absolute;
     bottom: 50px;
     color: white;
-    
+    opacity: 0;
 }
 .foto i:hover {
     color: red;
