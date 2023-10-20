@@ -10,6 +10,8 @@
        <link rel="stylesheet" type="text/css" href="css/footer.css"/>
        <link rel="stylesheet" type="text/css" href="css/header.css"/>
        <link rel="stylesheet" type="text/css" href="css/modal.css"/>
+       <link rel="stylesheet" type="text/css" href="css/login.css"/>
+       <link rel="stylesheet" type="text/css" href="css/userCabinet.css"/>
        <link href="css/bootstrap.min.css" rel="stylesheet">
       </head>
     <body>
@@ -21,12 +23,27 @@
         <div class="name">
           CINEMA
         </div>
-        <div>
+        <div class="log-in">
           <i class="fa-solid fa-user" style="color: #aaaaaa;"></i>
-          Увійти
+          <p class ="loginUser" >Увійти<p>
+          <p class="userName" hidden='true'></p>
         </div>
       </header>
-      <div class = "procat">Зараз у прокаті</div>
+      <div class = "procat">
+          <div class="procat-name">Зараз у прокаті</div>
+          <div class="dropdown"> 
+            <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i>
+            <span class="list-day">Сьогодні, 3 жовтня</span>
+            <div class = "dropdown-list">
+              <div class="list-item1">
+                Сьогодні, 3 жовтня
+              </div>
+              <div class="list-item2">
+                Завтра, 4 жовтня
+              </div>
+            </div>
+          </div>
+      </div>
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -66,11 +83,12 @@
         </button>
       </div>
       <div class="container">
-        <div class="container text-center">
+
+        <div class="container-today text-center">
           <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
             <div class="col">
-              <div class="foto fotoPic">
-                <img src="images/chebyr.jpeg">
+              <div class="foto">
+                <img src="images/chebyr.jpeg" class="fotoMovie">
                 <i class="fa-regular fa-circle-play fa-2xl" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
               </div>
               <div class="p-3">
@@ -85,7 +103,7 @@
             </div>
             <div class="col">
               <div class="foto">
-                <img src="images/chebyr.jpeg">
+                <img src="images/chebyr.jpeg" class="fotoMovie">
                 <i class="fa-regular fa-circle-play fa-2xl" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
               </div>
               <div class="p-3">
@@ -98,7 +116,7 @@
             </div>
             <div class="col">
               <div class="foto">
-                <img src="images/chebyr.jpeg">
+                <img src="images/chebyr.jpeg" class="fotoMovie">
                 <i class="fa-regular fa-circle-play fa-2xl" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
               </div>
               <div class="p-3">
@@ -112,7 +130,7 @@
             </div>
             <div class="col">
               <div class="foto">
-                <img src="images/chebyr.jpeg">
+                <img src="images/chebyr.jpeg" class="fotoMovie">
                 <i class="fa-regular fa-circle-play fa-2xl" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
               </div>
               <div class="p-3">
@@ -124,7 +142,7 @@
             </div>
             <div class="col">
               <div class="foto">
-                <img src="images/chebyr.jpeg">
+                <img src="images/chebyr.jpeg" class="fotoMovie">
                 <i class="fa-regular fa-circle-play fa-2xl" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
               </div>
               <div class="p-3">
@@ -139,7 +157,7 @@
             </div>
             <div class="col">
               <div class="foto">
-                <img src="images/chebyr.jpeg">
+                <img src="images/chebyr.jpeg" class="fotoMovie">
               </div>
               <div class="p-3">
                 <h4>Чебурашка</h3>
@@ -151,7 +169,7 @@
             </div>
             <div class="col">
               <div class="foto">
-                <img src="images/chebyr.jpeg">
+                <img src="images/chebyr.jpeg" class="fotoMovie">
               </div>
               <div class="p-3">
                 <h4>Чебурашка</h3>
@@ -164,7 +182,7 @@
             </div>
             <div class="col">
               <div class="foto">
-                <img src="images/chebyr.jpeg">
+                <img src="images/chebyr.jpeg" class="fotoMovie">
               </div>
               <div class="p-3">
                 <h4>Чебурашка</h3>
@@ -178,7 +196,7 @@
             </div>
             <div class="col">
               <div class="foto">
-                <img src="images/chebyr.jpeg">
+                <img src="images/chebyr.jpeg" class="fotoMovie">
               </div>
               <div class="p-3">
                 <h4>Чебурашка</h3>
@@ -203,6 +221,145 @@
             </div>
           </div>
         </div>
+
+        <div class="container-tomorrow text-center">
+          <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class="col">
+              <div class="foto">
+                <img src="images/strangeWord.jpg" class="fotoMovie">
+                <i class="fa-regular fa-circle-play fa-2xl" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+              </div>
+              <div class="p-3">
+                <h4>Странный мир</h3>
+                <h5>6+ <span class="ganr">Мультфільм</span></h4>
+                <h6>Сьогодні</h5>
+                  <button type="button" class="btn btn-warning">14:45</button>
+                  <button type="button" class="btn btn-warning">15:30</button>
+                  <button type="button" class="btn btn-warning">19:00</button>
+                  <button type="button" class="btn btn-warning">19:30</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="foto">
+                <img src="images/strangeWord.jpg" class="fotoMovie">
+                <i class="fa-regular fa-circle-play fa-2xl" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+              </div>
+              <div class="p-3">
+                <h4>Странный мир</h3>
+                  <h5>6+ <span class="ganr">Мультфільм</span></h4>
+                  <h6>Сьогодні</h5>
+                    <button type="button" class="btn btn-warning">14:45</button>
+                    <button type="button" class="btn btn-warning">15:30</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="foto">
+                <img src="images/strangeWord.jpg" class="fotoMovie">
+                <i class="fa-regular fa-circle-play fa-2xl" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+              </div>
+              <div class="p-3">
+                <h4>Странный мир</h3>
+                  <h5>6+ <span class="ganr">Мультфільм</span></h4>
+                  <h6>Сьогодні</h5>
+                    <button type="button" class="btn btn-warning">14:45</button>
+                    <button type="button" class="btn btn-warning">15:30</button>
+                    <button type="button" class="btn btn-warning">19:00</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="foto">
+                <img src="images/strangeWord.jpg" class="fotoMovie">
+                <i class="fa-regular fa-circle-play fa-2xl" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+              </div>
+              <div class="p-3">
+                <h4>Странный мир</h3>
+                <h5>6+ <span class="ganr">Мультфільм</span></h4>
+                <h6>Сьогодні</h5>
+                  <button type="button" class="btn btn-warning">14:45</button>
+                </div>
+            </div>
+            <div class="col">
+              <div class="foto">
+                <img src="images/strangeWord.jpg" class="fotoMovie">
+                <i class="fa-regular fa-circle-play fa-2xl" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+              </div>
+              <div class="p-3">
+                <h4>Странный мир</h3>
+                  <h5>6+ <span class="ganr">Мультфільм</span></h4>
+                  <h6>Сьогодні</h5>
+                    <button type="button" class="btn btn-warning">14:45</button>
+                    <button type="button" class="btn btn-warning">15:30</button>
+                    <button type="button" class="btn btn-warning">19:00</button>
+                    <button type="button" class="btn btn-warning">19:30</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="foto">
+                <img src="images/strangeWord.jpg" class="fotoMovie">
+              </div>
+              <div class="p-3">
+                <h4>Странный мир</h3>
+                  <h5>6+ <span class="ganr">Мультфільм</span></h4>
+                  <h6>Сьогодні</h5>
+                    <button type="button" class="btn btn-warning">14:45</button>
+                    <button type="button" class="btn btn-warning">15:30</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="foto">
+                <img src="images/strangeWord.jpg" class="fotoMovie">
+              </div>
+              <div class="p-3">
+                <h4>Странный мир</h3>
+                  <h5>6+ <span class="ganr">Мультфільм</span></h4>
+                  <h6>Сьогодні</h5>
+                    <button type="button" class="btn btn-warning">14:45</button>
+                    <button type="button" class="btn btn-warning">15:30</button>
+                    <button type="button" class="btn btn-warning">19:00</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="foto">
+                <img src="images/strangeWord.jpg" class="fotoMovie">
+              </div>
+              <div class="p-3">
+                <h4>Странный мир</h3>
+                  <h5>6+ <span class="ganr">Мультфільм</span></h4>
+                  <h6>Сьогодні</h5>
+                    <button type="button" class="btn btn-warning">14:45</button>
+                    <button type="button" class="btn btn-warning">15:30</button>
+                    <button type="button" class="btn btn-warning">19:00</button>
+                    <button type="button" class="btn btn-warning">19:30</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="foto">
+                <img src="images/strangeWord.jpg" class="fotoMovie">
+              </div>
+              <div class="p-3">
+                <h4>Странный мир</h3>
+                  <h5>6+ <span class="ganr">Мультфільм</span></h4>
+                  <h6>Сьогодні</h5>
+                    <button type="button" class="btn btn-warning">14:45</button>
+                    <button type="button" class="btn btn-warning">15:30</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="foto">
+                <img src="images/strangeWord.jpg">
+              </div>
+              <div class="p-3">
+                <h4>Странный мир</h3>
+                  <h5>6+ <span class="ganr">Мультфільм</span></h4>
+                  <h6>Сьогодні</h5>
+                    <button type="button" class="btn btn-warning">14:45</button>
+                    <button type="button" class="btn btn-warning">15:30</button>
+                    <button type="button" class="btn btn-warning">19:00</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class ="sale">Отримай знижку на попрокн <span>-30%</span></div>
       <footer>
@@ -282,11 +439,64 @@
 </div>
 
 
+<div class="login">
+  <div class="cashback">
+    <h6>Cinema Cashback</h6>
+    <ul>
+      <li>
+        <i class="fa-solid fa-gift" style="color: #ff8647;"></i>
+        <p>Накопичуйте 3% з усіх <br>покупок на сайті та у касі</p>
+      </li>
+      <li>
+        <i class="fa-solid fa-percent" style="color: #ff8647;"></i>
+        <p>Отримуйте персональні <br>пропозиції та акції</p>
+      </li>
+      <li>
+        <i class="fa-solid fa-timeline" style="color: #ff8647;"></i>
+        <p>Історія кінозанурень</p>
+      </li>
+    </ul>
+  </div>
+  <div class="login-form">
+    <form name="loginForm">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Телефон</label>
+        <input type="text" class="form-control inputPhone" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="380**00000**">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Пароль</label>
+        <input type="password" class="form-control inputPassword" id="exampleInputPassword1" >
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Запам'ятати мене </label>
+      </div>
+      <button type="button" class="btn btn-primary enterUserButton">Ввести</button>
+      <p class="incorectLoginPassword" hidden ="true">Користувача з таким іменем не зареєстровано</p>
+    </form>
+  </div>
+  <button type="button" class="btn-close btn-close-login" aria-label="Close"></button>
+</div>
+
+
+
+<div class="myAccount">
+  <ul>
+    <li><a href="">Кабінет</a></li>
+    <li><a href="">Замовлення</a></li>
+    <li><a href="">Баланс</a></li>
+    <li><a href="">Історія</a></li>
+  </ul>
+  <button type="button" class="btn btn-primary exit">Вийти</button>
+</div>
+
 
       <script src="JS/main.js"></script>
+      <script src="JS/login.js"></script>
       <script src="JS/videoModal.js"></script>
       <script src="https://kit.fontawesome.com/5d5c816f10.js" crossorigin="anonymous"></script>
       <script src="JS/bootstrap.min.js"></script>
+      
     </body>
 </html>
 

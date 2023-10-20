@@ -23,11 +23,18 @@ img {
     transition: transform 0.25s;
   }
 .foto i {
-    position: absolute;
-    bottom: 50px;
     color: white;
-    opacity: 0;
+    bottom: 45px;
+    width: 100%;
+    position: absolute;
+    display: none;  
 }
 .foto i:hover {
     color: red;
+}
+.foto:hover i {
+    display: block;
+}
+.container-tomorrow {
+    display: none;
 }

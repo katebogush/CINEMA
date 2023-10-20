@@ -1,0 +1,28 @@
+.myAccount {
+    position: fixed;
+    top: 50px;
+    right: 40px;
+    z-index: 20;
+    border: 5px solid grey;
+    background-color: white;
+    color: black;
+    padding: 25px 35px;
+    border-radius: 10px;
+    display: none;
+}
+.myAccount li {
+    list-style-type: none;
+}
+.myAccount li a {
+    text-decoration: none;
+    color: black;
+}
+.myAccount ul {
+    padding: 0;
+}
+.exit {
+    margin-top: 15px;
+}
+.myAccount li a:hover {
+    color: coral;
+}
