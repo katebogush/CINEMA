@@ -38,7 +38,7 @@ function showLoginForm() {
     login.style.display = "flex";
 }
 
-let closeButton = document.querySelector(".btn-close-login")
+let closeButton = document.querySelector(".closeLogin")
 closeButton.addEventListener("click", closeLoginForm)
 function closeLoginForm() {
     login.style.display = "none";
