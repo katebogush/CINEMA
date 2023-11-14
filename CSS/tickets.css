@@ -28,6 +28,7 @@
     margin: 5px;
     border-radius: 50px 50px 0 0 ;
     position: relative;
+    display: inline-block;
 }
 .rov span:hover {
     background-color: gray;
@@ -54,14 +55,15 @@
 }
 .rov {   
     justify-content: center;
+    display: inline-block;
+    width: 70%;
+    text-align: center;
 }
 .rov p {
    margin-left: 30px;
    margin-right: 30px;
 }
-.hidden {
-    visibility: hidden;
-}
+
 .ekran {
     width: 70%;
     border-top: 7px solid grey;
@@ -175,7 +177,12 @@
 .titleSeats {
     font-size: 12px;
     height: 30px;
+    
 }
 .totalTicketsInfo, .totalPriceInfo {
     height: 20px;
+}
+.mainRow {
+    display: flex;
+    justify-content: center;
 }
